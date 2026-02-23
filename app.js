@@ -26,10 +26,10 @@ const CONFIG = {
     backgroundColor: 0xf0f0f0,
     
     // Rotation constraints
-    minPolarAngle: Math.PI / 4,
-    maxPolarAngle: Math.PI / 2,
-    minAzimuthAngle: -Math.PI / 4,
-    maxAzimuthAngle: Math.PI / 4,
+    minPolarAngle: -Math.PI / 1,
+    maxPolarAngle: Math.PI / 1,
+    minAzimuthAngle: -Math.PI / 1,
+    maxAzimuthAngle: Math.PI / 1,
 };
 
 // --- State ---
