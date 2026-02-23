@@ -1,0 +1,25 @@
+# Give Flower Page
+
+## Purpose
+- A single but professional looking digital present for a woman. She will click and gets a flower.
+
+## Key Aspects
+- Parametrizable, all params in single place, number of items, sizes, margins, fonts, texts, all should be editable.
+- HTML5 first, rely on .js inline libraries. (three.js & glTF/GLB recommended)
+- The whole work can be served from Github pages by refreshing index.html file in Chrome.
+
+## From user perspective
+User click or tap on a green button "Emsíku, dej mi kytku" located in the center of the screen. The button shakes a bit after each tap/click.
+
+After three hits, the button gets destroyed, 100 pieces of confetti emerge from the center and splash outwards, covering the entire screen. The 3d model is visible in the background immediately when the button is destroyed. The model should be large enough to cover the screen.
+
+Confetti fades out slowly, continuously revealing the flower in the background. Confetti movement must be physically realistic (e.g., incorporating gravity, drag, and rotation).
+
+User can tap/click to rotate the 3D model in restricted sensible angles.
+
+## confetti
+- red and gold strips (50:50), each containing black text "miluji tě".
+- 3D effect, each is rotating paper card containing the text. But not rotating too much to stay readable.
+
+## 3D models
+- For testing, assume there are many models but in reality, only the one in .3d_models will be always selected (and I dont have any special texture for it yet)

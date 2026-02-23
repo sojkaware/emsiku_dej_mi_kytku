@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ui-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#main-button {
+    width: 100%;
+    max-width: 300px; /* limits size on desktop */
+    max-height: 80vh; /* limits height on smaller aspect ratios */
+    object-fit: contain;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+    transition: filter 0.2s;
+}
+
+.expand-shrink {
+    animation: expandShrink 0.3s ease-in-out;
+}
+
+@keyframes expandShrink {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+    perspective: 1000px; /* Important for 3D effect of confetti */
+}
+
+.confetti-piece {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    transform-origin: center;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none; /* Hidden until button is clicked */
+}
