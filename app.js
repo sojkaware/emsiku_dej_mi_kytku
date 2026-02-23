@@ -9,8 +9,8 @@ const CONFIG = {
     
     // Confetti
     confettiCount: 150,
-    confettiFadeStartMs: 3000, // Starts fading after 3 seconds
-    confettiFadeDurationMs: 4000, // Takes 4 seconds to fade completely
+    confettiFadeStartMs: 2000, // Starts fading after 3 seconds
+    confettiFadeDurationMs: 3000, // Takes 4 seconds to fade completely
     confettiText: 'Vše nejlepší!',
     confettiColors: ['#FF0000', '#FFD700'], // Red and Gold
     confettiWidth: 180,
